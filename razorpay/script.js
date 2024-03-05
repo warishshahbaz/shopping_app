@@ -4,9 +4,9 @@
 // Add button code documentation:
 // https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/build-integration#code-to-add-pay-button
 
-document.getElementById("rzp-button1").onclick = function (e) {
+document.getElementById("btn").onclick = function (e) {
   var options = {
-    key: "<API_KEY>", // Enter the Key ID generated from the Dashboard
+    key: "rzp_test_NTxtjpwZpoedip", // Enter the Key ID generated from the Dashboard
     amount: 300 * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
     currency: "INR",
     name: "MyShop Checkout",

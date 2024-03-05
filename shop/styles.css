@@ -146,6 +146,8 @@ main-content .items {
   display: flex;
   width: auto;
   overflow-x: scroll;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 1rem 0;
   gap: 1rem;
 }
@@ -189,4 +191,9 @@ main-content .items .item .circle {
   height: 20px;
   border-radius: 100%;
   margin: 0 5px;
+}
+.img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
 }
