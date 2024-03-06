@@ -45,7 +45,7 @@ submit.addEventListener("click", (e) => {
       email.value = "";
       password.value = "";
       confirmPassword.value = "";
-      window.location.href = "/login.html";
+      window.location.href = "/shop/index.html";
     }
   } else {
     error.innerText = "confirm password is mismatch";
