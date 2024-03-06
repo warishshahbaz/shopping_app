@@ -10,6 +10,7 @@ if (currentUser) {
 
     document.getElementById("all").addEventListener("click", () => {
       randerElement(products);
+      document.getElementById("categary").innerText = "All Products";
       handleToggle("all");
     });
     document.getElementById("men").addEventListener("click", () => {
@@ -17,6 +18,7 @@ if (currentUser) {
         (product) => product.category === "men's clothing"
       );
       randerElement(result);
+      document.getElementById("categary").innerText = "Men's clothing";
       handleToggle("men");
     });
     document.getElementById("women").addEventListener("click", () => {
@@ -24,16 +26,20 @@ if (currentUser) {
         (product) => product.category === "women's clothing"
       );
       randerElement(result);
+      document.getElementById("categary").innerText = "Women's clothing";
       handleToggle("women");
     });
     document.getElementById("jewellery").addEventListener("click", () => {
       result = products.filter((product) => product.category === "jewelery");
       randerElement(result);
+      document.getElementById("categary").innerText = "Jewellery";
       handleToggle("jewellery");
     });
     document.getElementById("electronics").addEventListener("click", () => {
       result = products.filter((product) => product.category === "electronics");
       randerElement(result);
+      document.getElementById("categary").innerText = "Electronics";
+
       handleToggle("electronics");
     });
     randerElement(products);
